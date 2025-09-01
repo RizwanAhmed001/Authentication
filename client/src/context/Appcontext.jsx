@@ -8,7 +8,7 @@ export const AppContextProvider = (props) => {
 
   axios.defaults.withCredentials = true;
 
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = "https://authentication-sol3.onrender.com"
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [userData, setuserData] = useState(false);
   
