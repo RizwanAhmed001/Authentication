@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useContext } from "react";
-import { AppContext } from "../context/appcontext";
+import { AppContext } from "../context/Appcontext";
 import axios from "axios";
 import { toast } from "react-toastify";
 
