@@ -16,7 +16,7 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: ["http://localhost:3000", "https://authentication-client-l3gd.onrender.com"], // frontend URLs
+  origin: ["http://localhost:5173", "https://authentication-client-l3gd.onrender.com"], // frontend URLs
   credentials: true, // allow cookies
 }));
 
