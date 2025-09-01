@@ -10,11 +10,16 @@ const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins = ["https://authentication-client-l3gd.onrender.com"]
+// const allowedOrigins = ["https://authentication-client-l3gd.onrender.com"]
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({origin: allowedOrigins, credentials: true}));
+// app.use(cors({origin: allowedOrigins, credentials: true}));
+app.use(cors({
+  origin: "*", // Allow all origins
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // API Endpoints
 app.use("/api/auth", authRouter);
