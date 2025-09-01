@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { assets } from "../assets/assets";
-import { AppContext } from "../context/appcontext";
+import { AppContext } from "../context/Appcontext";
 
 function Header() {
 
